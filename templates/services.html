@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <main>
+        <div class="slider-area ">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap">
+                                <h2>My Services</h2>
+                                <nav aria-label="breadcrumb ">
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href={% url "index" %}>Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#">My Services</a></li> 
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="categories-area section-padding3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-tittle mb-70">
+                            <h2>Transforming ideas into digital reality that's what my services deliver.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-pen"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5>
+                                    <a href={% url "services" %}>Website Design</a>
+                                </h5>
+                                <p>
+                                    Responsive, Intuitive, Seamless: Our web designs are not just visually appealing; they are also optimized for seamless user experiences across devices. Navigate the digital landscape with confidence, backed by our responsive design expertise
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-speaker"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5>
+                                    <a href={% url "services" %}>Backend Brilliance with Flask and Django</a>
+                                </h5>
+                                <p>
+                                    Crafting Dynamic Experiences: With expertise in Django and Flask, we specialize in developing dynamic backend systems that seamlessly integrate with your frontend. Our solutions are not just code; they are the driving force behind your web applications' success.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}
+    
