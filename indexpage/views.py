@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from indexpage.models import User
 
 
 def about_page(request):
@@ -15,20 +14,6 @@ def blog(request):
 
 
 def contect(request):
-    try:
-        if request.method == "POST":
-            discription = request.POST.get("discription")
-            email = request.POST.get("email")
-            name = request.POST.get("name")
-            subject = request.POST.get("subject")
-            user_created = User(
-                discription=discription, email=email, name=name, subject=subject
-            )
-            user_created.save()
-
-    except Exception as e:
-        print(e)
-
     return render(request, "contact.html")
 
 
@@ -41,18 +26,7 @@ def error404(request):
 
 
 def index(request):
-    try:
-        if request.method == "POST":
-            discription = request.POST.get("discription")
-            email = request.POST.get("email")
-            name = request.POST.get("name")
-            user_created = User(discription=discription, email=email, name=name)
-            user_created.save()
-
-    except Exception as e:
-        print(e)
-
-    return render(request, "index.html")
+    return render(request, "home.html")
 
 
 def main(request):
