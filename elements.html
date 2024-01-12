@@ -1,6 +1,76 @@
-{% extends "base.html" %}
-{% load static %}
-{% block content %}
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Personal Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon"type="image/x-icon"href="./assets/img/favicon.ico">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/css/slicknav.css">
+        <link rel="stylesheet" href="./assets/css/flaticon.css">
+        <link rel="stylesheet" href="./assets/css/animate.min.css">
+        <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./assets/css/themify-icons.css">
+        <link rel="stylesheet" href="./assets/css/slick.css">
+        <link rel="stylesheet" href="./assets/css/nice-select.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Preloader Start -->
+        <div id="preloader-active">
+            <div class="preloader d-flex align-items-center justify-content-center">
+                <div class="preloader-inner position-relative">
+                    <div class="preloader-circle"></div>
+                    <div class="preloader-img pere-text">
+                        <img src="./assets/img/logo/loder.jpg" alt=""> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Preloader End -->
+        <header>
+            <div class="header-area">
+                    <div class="main-header  header-sticky">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <div class="col-xl-2 col-lg-2 col-md-1">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="./assets/img/gallery/portfolioimg.png" alt="" style="width:75%"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-10 col-lg-10 col-md-10">
+                                    <div class="menu-main d-flex align-items-center justify-content-end">
+                                        <div class="main-menu f-right d-none d-lg-block">
+                                            <nav> 
+                                                <ul id="navigation">
+                                                    <li><a href="index.html">Home</a></li>
+                                                    <li><a href="about.html">About</a></li>
+                                                    <li><a href="services.html">Services</a></li>
+                                                    <li><a href="resume.html">Resume</a></li>
+                                                    <li><a href="contact.html">Contact</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <div class="header-right-btn f-right d-none d-xl-block ml-20">
+                                            <a href="index.html" class="btn header-btn">Get Free Consultent</a>
+                                        </div>
+                                    </div>
+                                </div>   
+                                <div class="col-12">
+                                    <div class="mobile_menu d-block d-lg-none"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </header>
+
 	<main>
 		<!-- Hero Start -->
 		<div class="slider-area ">
@@ -12,7 +82,7 @@
 								<h2>Elements</h2>
 								<nav aria-label="breadcrumb ">
 									<ol class="breadcrumb">
-									<li class="breadcrumb-item"><a href={% url "index" %}>Home</a></li>
+									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
 									<li class="breadcrumb-item"><a href="#">Elements</a></li> 
 									</ol>
 								</nav>
@@ -160,7 +230,7 @@
 					<h3 class="mb-30">Left Aligned</h3>
 					<div class="row">
 						<div class="col-md-3">
-							<img src="{% static 'img/elements/d.jpg" alt="" class="img-fluid">
+							<img src="./assets/img/elements/d.jpg" alt="" class="img-fluid">
 						</div>
 						<div class="col-md-9 mt-sm-20">
 							<p>Recently, the US Federal government banned online casinos from operating in America by making
@@ -203,7 +273,7 @@
 								talk a little about what symptoms</p>
 						</div>
 						<div class="col-md-3">
-							<img src="{% static 'img/elements/d.jpg' %}" alt="" class="img-fluid">
+							<img src="./assets/img/elements/d.jpg" alt="" class="img-fluid">
 						</div>
 					</div>
 				</div>
@@ -278,7 +348,7 @@
 							</div>
 							<div class="table-row">
 								<div class="serial">01</div>
-								<div class="country"> <img src="{% static 'img/elements/f1.jpg' %}" alt="flag">Canada</div>
+								<div class="country"> <img src="./assets/img/elements/f1.jpg" alt="flag">Canada</div>
 								<div class="visit">645032</div>
 								<div class="percentage">
 									<div class="progress">
@@ -289,7 +359,7 @@
 							</div>
 							<div class="table-row">
 								<div class="serial">02</div>
-								<div class="country"> <img src="{% static 'img/elements/f2.jpg' %}" alt="flag">Canada</div>
+								<div class="country"> <img src="./assets/img/elements/f2.jpg" alt="flag">Canada</div>
 								<div class="visit">645032</div>
 								<div class="percentage">
 									<div class="progress">
@@ -300,7 +370,7 @@
 							</div>
 							<div class="table-row">
 								<div class="serial">03</div>
-								<div class="country"> <img src="{% static 'img/elements/f3.jpg' %}" alt="flag">Canada</div>
+								<div class="country"> <img src="./assets/img/elements/f3.jpg" alt="flag">Canada</div>
 								<div class="visit">645032</div>
 								<div class="percentage">
 									<div class="progress">
@@ -311,7 +381,7 @@
 							</div>
 							<div class="table-row">
 								<div class="serial">04</div>
-								<div class="country"> <img src="{% static 'img/elements/f4.jpg' %}" alt="flag">Canada</div>
+								<div class="country"> <img src="./assets/img/elements/f4.jpg" alt="flag">Canada</div>
 								<div class="visit">645032</div>
 								<div class="percentage">
 									<div class="progress">
@@ -322,7 +392,7 @@
 							</div>
 							<div class="table-row">
 								<div class="serial">05</div>
-								<div class="country"> <img src="{% static 'img/elements/f5.jpg' %}" alt="flag">Canada</div>
+								<div class="country"> <img src="./assets/img/elements/f5.jpg" alt="flag">Canada</div>
 								<div class="visit">645032</div>
 								<div class="percentage">
 									<div class="progress">
@@ -333,7 +403,7 @@
 							</div>
 							<div class="table-row">
 								<div class="serial">06</div>
-								<div class="country"> <img src="{% static 'img/elements/f6.jpg' %}" alt="flag">Canada</div>
+								<div class="country"> <img src="./assets/img/elements/f6.jpg" alt="flag">Canada</div>
 								<div class="visit">645032</div>
 								<div class="percentage">
 									<div class="progress">
@@ -344,7 +414,7 @@
 							</div>
 							<div class="table-row">
 								<div class="serial">07</div>
-								<div class="country"> <img src="{% static 'img/elements/f7.jpg' %}" alt="flag">Canada</div>
+								<div class="country"> <img src="./assets/img/elements/f7.jpg" alt="flag">Canada</div>
 								<div class="visit">645032</div>
 								<div class="percentage">
 									<div class="progress">
@@ -355,7 +425,7 @@
 							</div>
 							<div class="table-row">
 								<div class="serial">08</div>
-								<div class="country"> <img src="{% static 'img/elements/f8.jpg' %}" alt="flag">Canada</div>
+								<div class="country"> <img src="./assets/img/elements/f8.jpg" alt="flag">Canada</div>
 								<div class="visit">645032</div>
 								<div class="percentage">
 									<div class="progress">
@@ -371,43 +441,43 @@
 					<h3>Image Gallery</h3>
 					<div class="row gallery-item">
 						<div class="col-md-4">
-							<a href="{% static 'img/elements/g1.jpg' %}" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url({% static 'img/elements/g1.jpg);"></div>
+							<a href="./assets/img/elements/g1.jpg" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url(./assets/img/elements/g1.jpg);"></div>
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="{% static 'img/elements/g2.jpg' %}" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url({% static 'img/elements/g2.jpg);"></div>
+							<a href="./assets/img/elements/g2.jpg" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url(./assets/img/elements/g2.jpg);"></div>
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="{% static 'img/elements/g3.jpg' %}" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url({% static 'img/elements/g3.jpg);"></div>
+							<a href="./assets/img/elements/g3.jpg" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url(./assets/img/elements/g3.jpg);"></div>
 							</a>
 						</div>
 						<div class="col-md-6">
-							<a href="{% static 'img/elements/g4.jpg' %}" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url({% static 'img/elements/g4.jpg);"></div>
+							<a href="./assets/img/elements/g4.jpg" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url(./assets/img/elements/g4.jpg);"></div>
 							</a>
 						</div>
 						<div class="col-md-6">
-							<a href="{% static 'img/elements/g5.jpg' %}" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url({% static 'img/elements/g5.jpg);"></div>
+							<a href="./assets/img/elements/g5.jpg" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url(./assets/img/elements/g5.jpg);"></div>
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="{% static 'img/elements/g6.jpg' %}" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url({% static 'img/elements/g6.jpg);"></div>
+							<a href="./assets/img/elements/g6.jpg" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url(./assets/img/elements/g6.jpg);"></div>
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="{% static 'img/elements/g7.jpg' %}" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url({% static 'img/elements/g7.jpg);"></div>
+							<a href="./assets/img/elements/g7.jpg" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url(./assets/img/elements/g7.jpg);"></div>
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="{% static 'img/elements/g8.jpg' %}" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url({% static 'img/elements/g8.jpg);"></div>
+							<a href="./assets/img/elements/g8.jpg" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url(./assets/img/elements/g8.jpg);"></div>
 							</a>
 						</div>
 					</div>
@@ -665,4 +735,66 @@
 		</div>
 		<!-- End Align Area -->
 	</main>
-{% endblock %}
+	<footer>
+        <div class="footer-area">
+            <div class="container">
+                <div class="footer-top footer-padding">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="footer-top-cap text-center">
+                                <img src="./assets/static/img/logo/logo2_footer.png" alt="">
+                                <img src="./assets/img/gallery/brand3.png" alt="">
+                                <span><a href="mailto:chavdah280@gmail.com">chavdah280@gmail.com</a></span>
+                                <p>Ahmedabad Gujarat, India </p>
+                                <p>PINCODE - 380060</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-xl-9 col-lg-8">
+                            <div class="footer-copy-right">
+                                <p>
+                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="index.html" target="_blank">Hiren Chavda</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="footer-social f-right">
+                                <a>Stay Connected</a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="back-top">
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+  </html>
